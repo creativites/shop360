@@ -1,0 +1,69 @@
+//商品分类页相关样式
+.category{
+    padding-top:@hh; 
+    padding-bottom: @fh;
+    background-color: #fff;
+    color: #666;
+    
+    //左边导航栏的宽度
+    @left_nav:0.96rem;
+    @left_color:#F0F0F0;
+    .category_leftnav{
+        width: @left_nav;
+        position: fixed;
+        left:0;
+        top: @hh;
+        background-color:@left_color;
+        z-index: 100;
+        a{
+            display: block;
+            border-left:0.02rem solid @left_color;
+            padding: 0.11rem 0 0.11rem 0.11rem;
+            font-size: 0.14rem;
+            &.active{
+                border-color: #82c92f;
+                background-color: #fff;
+            }
+            &:hover{
+                color: inherit;
+            }
+        }
+    }
+    .category_main{
+        padding-left: @left_nav;
+        overflow: hidden;
+        a{
+            display: block;
+            margin:0 0.12rem;
+            padding: 0.12rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            overflow: hidden;
+            img{
+                float: left;
+                width: 0.99rem;
+                height: 0.99rem;
+            }
+            .right_box{
+                float: left;
+                margin-left: 0.09rem;
+                color: #666;
+                p{
+                    width: 1.46rem;
+                    height: 0.54rem;
+                    line-height: 0.18rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+                span{
+                    display: block;
+                    margin-top: 0.08rem;
+                    color: #ff6666;
+                    font-size: 0.16rem;
+                }
+            }
+        }
+    }
+}

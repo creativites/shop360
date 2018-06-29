@@ -1,0 +1,303 @@
+//主页样式
+header{
+    @font-size:0.18rem;
+    height: @hh;
+    font-size: @font-size;
+    text-align: center;
+    color: #fff;
+    line-height: @hh;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1000;
+    h2{
+        height: @hh;
+        line-height: @hh;
+    }
+    .back-btn{
+        @h:@hh;
+        display: block;
+        position: absolute;
+        width: @h;
+        height: @h;
+        font-size: @font-size;
+        text-align: center;
+        line-height: @h;
+        color: #fff;
+        top: 0;
+        left: 0;
+    }
+    .toHome{
+        @h:@hh;
+        display: block;
+        position: absolute;
+        width: @h;
+        height: @h;
+        font-size: @font-size;
+        text-align: center;
+        line-height: @h;
+        color: #fff;
+        top: 0;
+        right: 0;
+    }
+
+}
+.main{
+    padding-top:@hh; 
+    padding-bottom: @fh;
+    background-color: #F0F0F0;
+}
+//搜索框
+.search-box{
+    height: 0.5rem;
+    padding: 0rem 0.07rem;
+    background: #F0F0F0;
+    overflow: hidden;
+    .input-box{
+        @h:0.34rem;
+
+        height: @h;
+        background: #fff;
+        border-radius: 0.04rem ;
+        margin-top: 0.07rem;
+        display: flex;
+        padding:0 0.08rem;
+
+        input{
+            display: block;
+            flex: 1;
+            height: @h;
+            font-size: 0.14rem;
+            line-height: @h;
+        }
+    }
+}
+//轮播图
+.banner{
+    @h:2.29rem;
+    width: 100%;
+    height: @h;
+    overflow: hidden;
+    a{
+        display: block;
+        height: @h;
+        overflow: hidden;
+    }
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+//商品列表
+.goods-list{
+    overflow: hidden;
+    li{
+        overflow: hidden;
+        h3{
+            height: 0.42rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 0.16rem;
+            color: #666;
+            line-height: 0.42rem;
+            font-weight: normal;
+            em{
+                color: #ccc;
+            }
+        }
+        //每一楼层的顶部图片
+        .topimg{
+            @h:2.29rem;
+            height: @h;
+            width: 100%;
+            a{
+                display: block;
+                height: @h;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .goods-item{
+            background-color: #fff;
+            overflow: hidden;
+            a{
+                display: block;
+                float: left;
+                width: 50%;
+                box-sizing: border-box;
+                border-right: 1px solid #F1F1F1;
+                border-bottom: 1px solid #F1F1F1;
+                padding: 0.12rem 0 0.08rem 0;
+                text-align: center;
+                img{
+                    display: block;
+                    margin: auto;
+//                  margin-top: 0.08rem;
+                    width: 1.63rem;
+                    height: 1.63rem;
+                }
+                h5{
+                    margin-top: 0.08rem;
+                    height: 0.19rem;
+                    line-height: 0.19rem;
+                    font-size: 0.13rem;
+                    color: #555;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                p{
+                    margin-top: 0.08rem;
+                    height: 0.19rem;
+                    line-height: 0.19rem;
+                    font-size: 0.14rem;
+                    color: red;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+//底部
+.bottom{
+    .show_more{
+        a{
+            display: block;
+            background: #F4F4F4;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.14rem;
+            text-align: center;
+            color: #666;
+            border-bottom: 1px solid #CCC;
+        }
+    }
+    //声明
+    .statement{
+        background-color: #fff;
+        overflow: hidden;
+        padding: 0.16rem 0;
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+        .contents-item{
+            float: left;
+            width: 35%;
+            box-sizing: border-box;
+            border-right: solid 1px #D6D6D6;
+            color: #666;
+            font-size: 0.13rem;
+            text-align: center;
+            i{
+                display: block;
+                width: 0.38rem;
+                height: 0.38rem;
+                line-height: 0.38rem;
+                margin: 0 auto;
+                border: 1px solid #AAA;
+                border-radius: 0.4rem;
+                -webkit-border-radius: 0.4rem;
+                font-size: 0.14rem;
+                text-align: center;
+                color: #666;
+            }
+            em{
+                display: block;
+                height: 0.14rem;
+                line-height: 0.14rem;
+                margin-top: 0.08rem;
+            }
+        }
+        .w30{
+            width: 30%;
+            border: 0;
+        }
+    }
+    //相关信息
+    .help-number{
+        background-color: #fff;
+        line-height: 0.2rem;
+        font-size: 0.13rem;
+        color: #999;
+        p{
+            overflow: hidden;
+            width: 2.9rem;
+            margin: 0 auto;
+            padding-top: 0.18rem;
+            //高度
+            @h:0.24rem;
+            em{
+                float: left;
+                vertical-align: top;
+                height: @h;
+                line-height: @h;
+            }
+            span{
+                float: left;
+                vertical-align: top;
+                i{
+                    display: block;
+                    text-align: left;
+                    height: @h;
+                    line-height: @h;
+                    a{
+                        color: #666;
+                    }
+                }
+            }
+        }
+        .copyright{
+            padding-bottom: 0.12rem;
+            line-height: 0.14rem;
+            font-size: 0.12rem;
+            padding-top: 0.12rem;
+            text-align: center;
+        }
+    }
+}
+footer{
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    ul{
+        display: flex;
+
+        li{
+            flex: 1;
+
+            a{
+                display: block;
+                height: @fh;
+                text-align: center;
+                color: #555;
+                box-sizing: border-box;
+                padding-top: 0.03rem;
+                border-top:0.01rem solid #d0d0d0;
+                border-bottom:0.01rem solid #d0d0d0;
+                &.active{
+                    color: #19a243;
+                }
+            
+                .iconfont{
+                    line-height: 0.38rem;
+                    font-size: 0.28rem;
+                }
+                p{
+                    font-size: 0.13rem;
+                }
+            }
+        }
+    }
+}

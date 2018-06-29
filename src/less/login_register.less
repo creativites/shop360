@@ -1,0 +1,61 @@
+.login_main{
+    padding:0 0.2rem;
+    padding-top:@hh; 
+    padding-bottom: @fh;
+    background-color: #fff;
+    color: #666;
+    .input{
+        &.mar20{
+            margin-top: 0.2rem;
+        }
+        @h:0.4rem;
+        margin-top: 0.3rem;
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-box;
+        //水平从左到右排列子元素
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        font-size: 0.16rem;
+        color: #000;
+        span{
+            display: block;
+            height: @h;
+            width: 0.6rem;
+            line-height: @h;
+            text-align: right;
+        }
+        input{
+            display: block;
+            height: @h;
+            line-height: @h;
+            box-flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            margin-left: 0.15rem;
+            padding: 0.1rem;
+            background: #fafafa;
+            border: 1px solid #eee;
+            font-size: 0.14rem;
+        }
+    }
+    .login_btn{
+        display: block;
+        height: 0.42rem;
+        line-height: 0.42rem;
+        margin-top: 0.2rem;
+        font-size: 0.20rem;
+        text-align: center;
+        color: #fff;
+        background-color: #93beff;
+        border: 1px solid #93beff;
+        border-radius: 0.02rem;
+        -webkit-border-radius: 0.02rem;
+        -moz-border-radius: 0.02rem;
+    }
+}
